@@ -90,7 +90,8 @@ body {
 .contact-button,
 .learn-button,
 .touch-button,
-.mission-touch-button {
+.mission-touch-button,
+.view-blog {
   font-family: Inter;
   font-weight: 600;
   font-size: 16px;
@@ -106,7 +107,9 @@ body {
 .contact-button:hover,
 .learn-button:hover,
 .touch-button:hover,
-.mission-touch-button:hover {
+.mission-touch-button:hover,
+.view-blog:hover,
+.start-quote-button:hover {
   background-color: #d4580b;
 }
 
@@ -127,7 +130,6 @@ body {
   padding: 40px 60px;
 }
 
-
 .line-sign {
   width: auto;
 }
@@ -137,11 +139,11 @@ body {
   padding-right: 30px;
 }
 
-
-.quotes-text h2 ,
+.quotes-text h2,
 .heading-aboutus,
 .mission-text,
-.title-testimonals {
+.title-testimonals,
+.start-title {
   font-family: Inter;
   font-weight: 400;
   font-size: 15px;
@@ -151,7 +153,9 @@ body {
 .quote-text-sign,
 .aboutus-text-container,
 .mission-title-container,
-.testimonals-title-container {
+.testimonals-title-container,
+.blog-title-container,
+.start-title-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -170,7 +174,9 @@ body {
 .quality-text,
 .service-text,
 .value-text,
-.success-text {
+.success-text,
+.latest-text,
+.journey-text {
   color: #f37321;
 }
 
@@ -181,7 +187,6 @@ body {
   max-width: 80%;
   margin-bottom: 18px;
 }
-
 
 .grid-one,
 .grid-two {
@@ -235,6 +240,12 @@ body {
   box-shadow: 0 4px 32.1px rgba(0, 0, 0, 25%);
   top: 20px;
   right: -30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.efficiency-background:hover {
+  background-color: #fff9f4;
 }
 
 .efficiency {
@@ -336,6 +347,12 @@ body {
   position: absolute;
   top: 200px;
   right: 300px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chart-container:hover {
+  background-color: #fff9f4;
 }
 
 .energy-text {
@@ -443,7 +460,10 @@ body {
 /* About us Section */
 .about-us-section,
 .contact-us-section,
-.our-mission-section {
+.our-mission-section,
+.testimonals-section,
+.blog-section,
+.start-section {
   display: block;
 }
 .about-us-container {
@@ -501,7 +521,8 @@ body {
 
 .title-aboutus,
 .mission-title,
-.success-stories {
+.success-stories,
+.latest-blog {
   font-family: Helvetica;
   max-width: 491px;
   font-weight: 400;
@@ -511,7 +532,7 @@ body {
 }
 
 .paragraph-aboutus,
-.mission-paragraph  {
+.mission-paragraph {
   font-family: Inter;
   font-weight: 400;
   font-size: 15px;
@@ -526,63 +547,57 @@ body {
   margin-bottom: 13px;
 }
 
-
 /* Contact Us Section */
 .contactus-background {
-    width: 100%;
-    min-height: 179px;
-    background:
-    #0B253B
-    url("signs/Mask group.png")
-    center / cover
-    no-repeat;
+  width: 100%;
+  min-height: 179px;
+  background: #0b253b url("signs/Mask group.png") center / cover no-repeat;
 }
 
 .contact-text-container,
 .our-mission-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 60px 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 60px 60px;
 }
 
 .solar-energy-text {
-  color: #F37321;
+  color: #f37321;
 }
 
 .embrace-text {
-    font-family: Helvetica;
-    font-weight: 400;
-    font-size: 36px;
-    color: white;
-    margin-bottom: 10px;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 10px;
 }
 
 .getstarted-text {
-    font-family: Inter;
-    font-weight: 400;
-    font-size: 15px;
-    color: white;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
 }
 
-.white-button a {
-  text-decoration: none; 
-  color:black;
-
+.white-button {
+  text-decoration: none;
+  color: black;
 }
 .white-button {
-    font-family: Inter;
-    font-weight: 600;
-    font-size: 16px;
-    color: #232323;
-    border: none;
-    border-radius: 72px;
-    background-color: white;
-    padding: 16px 28px;
-    cursor: pointer;
-    transition: background 0.3s;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  color: #232323;
+  border: none;
+  border-radius: 72px;
+  background-color: white;
+  padding: 16px 28px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .white-button:hover {
@@ -591,8 +606,8 @@ body {
 
 /* Our mission Section */
 .mission-image {
-    max-width: 535px;
-    object-fit: cover;
+  max-width: 535px;
+  object-fit: cover;
 }
 
 .image-six {
@@ -606,17 +621,24 @@ body {
 
 .testimonals-info-container {
   padding: 60px 60px;
-
 }
-.success-stories-description {
+.success-stories-description,
+.blog-description {
   font-family: Inter;
   font-weight: 400;
   font-size: 15px;
   color: #232323;
   line-height: 144%;
+  text-align: center;
 }
 
-.testimonals-text {
+.success-stories,
+.latest-blog {
+  text-align: center;
+}
+
+.testimonals-text,
+.blog-text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -626,55 +648,58 @@ body {
 .all-reviews-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 
-.first-two-review {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
+.first-two-review,
 .last-two-review {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  padding: 0 16px;
 }
-
 
 .review-bg {
   position: relative;
-  max-width: 380px;
-  max-height: 281px;
+  width: 100%;
+  max-width: 580px;
   border-radius: 20px;
   border-width: 1px;
   border-style: solid;
   border-color: #c0c0c0;
   background-color: #ffffff;
-  margin-right: 30px;
+  margin: 0;
+  flex: 1 1 280px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-bg:hover {
+  box-shadow: 0 5px 20px rgba(118, 118, 118, 0.25);
 }
 
 .comma-sign {
-    position: absolute;
-    top: -40px;
-    right: 20px;
-
+  position: absolute;
+  top: -40px;
+  right: 20px;
 }
 
 .review-info-container {
- padding: 20px 28px;
+  padding: 20px 28px;
 }
 
 .review-1 {
   font-family: Inter;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 13.5px;
   color: #232323;
   line-height: 152%;
-  max-width: 324px;
-  margin-top: 17.22px;
-  margin-bottom: 18px;
-
+  max-width: none;
+  margin: 17px 0 18px;
 }
 
 .review-4 {
@@ -683,21 +708,19 @@ body {
   font-size: 12px;
   color: #232323;
   line-height: 152%;
-  max-width: 324px;
-  margin-top: 17.22px;
-  margin-bottom: 18px;
+  max-width: none;
+  margin: 17px 0 18px;
 }
 
-.review-2, .review-3 {
+.review-2,
+.review-3 {
   font-family: Inter;
   font-weight: 400;
   font-size: 15px;
   color: #232323;
   line-height: 152%;
-  max-width: 324px;
-  margin-top: 17.22px;
-  margin-bottom: 18px;
-
+  max-width: none;
+  margin: 17px 0 18px;
 }
 
 .profile-name {
@@ -715,7 +738,6 @@ body {
   font-size: 14px;
   color: #232323;
   line-height: 100%;
-
 }
 
 .review-1-img {
@@ -732,8 +754,326 @@ body {
   align-items: center;
   margin-top: 20px;
 }
-    
 
+/* Blog Section */
+
+.blog-all-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0 16px;
+  margin-bottom: 44px;
+}
+
+.blog-all-text-container {
+  padding: 0px 7px;
+}
+
+.title-blog {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: #f37321;
+  white-space: nowrap;
+}
+
+.background-blog {
+  position: relative;
+  max-width: 380px;
+  width: 100%;
+  background-color: #ffffff;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #c0c0c0;
+  margin: 0;
+  flex: 1 1 280px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.background-blog:hover {
+  box-shadow: 0 5px 20px rgba(118, 118, 118, 0.25);
+}
+
+.blog-info-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 24px;
+}
+
+.image-seven {
+  max-width: 356px;
+  width: 100%;
+  height: 233px;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2px);
+}
+
+.training-text {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  color: #202636;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+
+.training-description {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: #252525;
+  margin-bottom: 11px;
+}
+
+.read-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.read-container:hover {
+  text-decoration: underline;
+}
+
+.read-more {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 15px;
+  color: #232323;
+}
+
+.time-background-blog {
+  border-radius: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 35px;
+  left: 26px;
+  padding: 10px 13px;
+}
+
+.time-june {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  color: #252525;
+}
+
+/* Start Section */
+
+.start-section-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.start-section-background {
+  background-color: #fff9f4;
+}
+
+.start-quote-text-container {
+  padding-right: 30px;
+}
+
+.start-text {
+  font-family: Helvetica;
+  max-width: 371px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.05;
+  margin: 14px 0 15px;
+}
+
+.start-description {
+  max-width: 404px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: #232323;
+  line-height: 144%;
+}
+
+.get-quote-background {
+  max-width: 590px;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 10px 40.4px rgba(118, 118, 118, 0.25);
+  margin: 0;
+}
+
+.quote-all-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px;
+}
+
+.get-quote-title {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 24px;
+  color: #232323;
+  margin-bottom: 31px;
+}
+
+.start-type-bar {
+  padding: 13px 26px;
+  border-radius: 58px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c0c0c0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inter;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 16px;
+  transition: 0.3s;
+}
+
+.policy-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.privacy-policy-quote {
+  color: black;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  max-width: 477px;
+  margin-left: 3px;
+}
+
+.privacy-policy-color {
+  color: black;
+}
+
+.privacy-policy-color:hover {
+  color: #f37321;
+}
+
+.checkbox {
+  width: 20px;
+  height: 19px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #818181;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkbox:hover,
+.start-type-bar:hover {
+  border-color: #f37321;
+}
+
+.start-quote-button {
+  font-family: Inter;
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  background-color: #f37321;
+  border-radius: 72px;
+  padding: 16px 28px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+/* Footer Section */
+.footer-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.end-title {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.end-description {
+  max-width: 689px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 144%;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.end-information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  gap: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 22px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.about-us:hover,
+.blog:hover,
+.contact a:hover {
+  color: #f37321;
+}
+
+.accounts-sign {
+  margin-bottom: 31px;
+}
+
+.end-rights {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 25px;
+}
+
+.footer-background {
+  background-color: #0b253b;
+}
 
 /* Responsive Design */
 /* Mobile Screen */
@@ -793,9 +1133,47 @@ body {
   /* Contact us Section */
   .text-group {
     text-align: center;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+  }
+  /* Blog Section */
+  .blog-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Start Section */
+  .start-section-container {
+    flex-direction: column;
+    align-items: center;
   }
 
+  .start-quote-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: none;
+    margin-bottom: 30px;
+  }
+  .start-title {
+    white-space: nowrap;
+  }
+  .start-text {
+    text-align: center;
+  }
+  .start-description {
+    text-align: center;
+  }
+  /* Footer Section */
+  .end-title {
+    font-size: 20px;
+  }
+  .end-description {
+    font-size: 11px;
+  }
+
+  .end-information,
+  .end-rights {
+    font-size: 12px;
+  }
 }
 
 /* Tablet Screen */
@@ -821,13 +1199,15 @@ body {
 
   .services-title h1,
   .title-aboutus,
-  .mission-title {
+  .mission-title,
+  .success-stories {
     font-size: 30px;
   }
 
   .line-sign,
   .sign-aboutus,
-  .sign-mission {
+  .sign-mission,
+  .sign-testimonals {
     width: 70px;
   }
 
@@ -837,10 +1217,11 @@ body {
   .paragraph-aboutus,
   .getstarted-text,
   .mission-text,
-  .mission-paragraph {
+  .mission-paragraph,
+  .title-testimonals {
     font-size: 12px;
   }
-  
+
   .contact-button,
   .learn-button,
   .touch-button,
@@ -855,10 +1236,47 @@ body {
     top: 0%;
   }
 
-   /* Contact us Section */
+  /* Contact us Section */
   .embrace-text {
-    font-size: 30px; 
-}
+    font-size: 30px;
+  }
+  /* Testimonals Section */
+  .success-stories-description {
+    font-size: 13px;
+  }
+  /* Blog Section */
+  .blog-container,
+  .start-section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Start Section */
+  .start-quote-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: none;
+    margin-bottom: 30px;
+  }
+  .start-title {
+    white-space: nowrap;
+  }
+  .start-text {
+    text-align: center;
+  }
+  .start-description {
+    text-align: center;
+  }
+  /* Footer Section */
+  .end-title {
+    font-size: 20px;
+  }
+  .end-description {
+    font-size: 11px;
+  }
 
-
+  .end-information,
+  .end-rights {
+    font-size: 12px;
+  }
 }
