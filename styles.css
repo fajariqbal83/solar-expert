@@ -122,12 +122,14 @@ body {
 }
 
 .quote-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 40px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 60px;
+    max-width: 1500px;
+    width: 100%;
 }
 
 .line-sign {
@@ -466,13 +468,16 @@ body {
 .start-section {
   display: block;
 }
+
 .about-us-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 40px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 60px;
+    max-width: 1500px;
+    width: 100%;
 }
 
 .about-us-img-container {
@@ -554,14 +559,16 @@ body {
   background: #0b253b url("signs/Mask group.png") center / cover no-repeat;
 }
 
-.contact-text-container,
+.contact-text-container, 
 .our-mission-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 60px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 60px 60px;
+    max-width: 1500px;
+    width: 100%;
 }
 
 .solar-energy-text {
@@ -620,8 +627,12 @@ body {
 }
 
 .testimonals-info-container {
-  padding: 60px 60px;
+    margin: 0 auto;
+    padding: 60px 60px;
+    max-width: 1500px;
+    width: 100%;
 }
+
 .success-stories-description,
 .blog-description {
   font-family: Inter;
@@ -758,10 +769,13 @@ body {
 /* Blog Section */
 
 .blog-all-info-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
 }
 
 .blog-container {
@@ -879,11 +893,14 @@ body {
 /* Start Section */
 
 .start-section-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .start-section-background {
@@ -1009,10 +1026,13 @@ body {
 }
 /* Footer Section */
 .footer-text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .end-title {

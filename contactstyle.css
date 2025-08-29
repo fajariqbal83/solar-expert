@@ -95,7 +95,7 @@
 /* Get in Touch Section */
 
 .in-touch-section {
-    display: block;
+  display: block;
 }
 
 .in-touch-background {
@@ -106,19 +106,21 @@
   display: grid;
   place-items: center;
   overflow: hidden;
+  margin-top: 100px;
 }
 
 .sun-pink {
   position: absolute;
-  inset: 0;              
   width: 100%;
-  height: 100%;        
-  object-fit: contain;    
-  margin: 0;
+  height: auto;
+  object-fit: contain;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 60px;
 }
 
 .in-touch-text {
-font-family: Helvetica;
+  font-family: Helvetica;
   font-weight: bold;
   font-size: 40px;
   color: #232323;
@@ -126,6 +128,105 @@ font-family: Helvetica;
 }
 
 /* Important Info Section */
+
+.imp-info-section-container {
+  display: block;
+}
+
+.imp-info-section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.get-quote-container,
+.button-container,
+.footer-all-container {
+  padding-right: 100px;
+}
+
+.imp-info-text-container {
+  padding-right: 20px;
+}
+
+.sign-bg-container {
+  position: relative;
+}
+
+.sign-location {
+  position: absolute;
+  top: 15px;
+  left: 18px;
+}
+
+.get-in-text {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 29px;
+}
+
+.imp-info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.imp-info-text {
+  margin-left: 12px;
+}
+
+.direct-text {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 18px;
+  color: #252525;
+  margin-bottom: 12px;
+}
+
+.info-direct {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 15px;
+  color: #252525;
+  max-width: 370px;
+  line-height: 22.43px;
+}
+
+.number-call {
+  color: #f37321;
+}
+
+.text-social-media {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  color: #252525;
+}
+
+.social-media-text {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 36px;
+  color: #252525;
+  margin-bottom: 18px;
+}
+
+.social-1-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 17px;
+}
+
 .get-quote-background {
   max-width: 590px;
   overflow: hidden;
@@ -153,12 +254,11 @@ font-family: Helvetica;
 }
 
 .fill-below-text {
-    font-family: Inter;
+  font-family: Inter;
   font-weight: 400;
   font-size: 15px;
   color: #9b9999;
-    margin-bottom: 30px;
-
+  margin-bottom: 30px;
 }
 
 .start-type-bar {
@@ -231,10 +331,132 @@ font-family: Helvetica;
   transition: background 0.3s;
 }
 
+/* Contact 2 Section */
+.contactus-background {
+  width: 100%;
+  min-height: 179px;
+  background: #f37321 url("signs/Mask group.png") center / cover no-repeat;
+}
 
+.contact-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 60px 60px;
+  max-width: 1500px;
+  width: 100%;
+}
 
+.embrace-text {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 10px;
+}
 
+.at-premier-text {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  line-height: 144%;
+  max-width: 694px;
+}
 
+.white-button {
+  text-decoration: none;
+  color: black;
+}
+.white-button {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  color: #232323;
+  border: none;
+  border-radius: 72px;
+  background-color: white;
+  padding: 16px 28px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.white-button:hover {
+  background-color: #d7d7d6;
+}
+
+/* Footer Section */
+.footer-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.end-title {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.end-description {
+  max-width: 689px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 144%;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.end-information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  gap: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 22px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.about-us:hover,
+.blog:hover,
+.contact a:hover {
+  color: #f37321;
+}
+
+.accounts-sign {
+  margin-bottom: 31px;
+}
+
+.end-rights {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 25px;
+}
+
+.footer-background {
+  background-color: #0b253b;
+}
 
 /* Responsive Design */
 /* Mobile Screen */
@@ -260,8 +482,77 @@ font-family: Helvetica;
   /* Get in Touch Section */
   .in-touch-text {
     font-size: 30px;
-    text-align: center;    
-}
+    text-align: center;
+  }
+
+  .in-touch-background {
+    margin-top: 50px;
+  }
+
+  /* Get in Touch Section */
+  .in-touch-text {
+    font-size: 35px;
+  }
+  /* Important Info Section */
+  .imp-info-section-container {
+    flex-direction: column;
+  }
+  .imp-info-text-container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 70px;
+  }
+
+  .imp-info-container {
+    flex-direction: column;
+  }
+
+  .info-direct {
+    text-align: center;
+  }
+
+  .imp-info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sign-img,
+  .sign-bg-container {
+    margin-bottom: 12px;
+  }
+
+  .text-social-media {
+    text-align: center;
+  }
+  /* Contact us Section */
+  .contact-text-container {
+    flex-direction: column;
+  }
+
+  .at-premier-text {
+    max-width: 494px;
+  }
+
+  .text-group {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-right: 70px;
+  }
+  /* Footer Section */
+  .end-title {
+    font-size: 20px;
+  }
+  .end-description {
+    max-width: 489px;
+    font-size: 11px;
+  }
+
+  .end-information,
+  .end-rights {
+    font-size: 12px;
+  }
 }
 
 /* Tablet Screen */
@@ -273,5 +564,64 @@ font-family: Helvetica;
   /* Get in Touch Section */
   .in-touch-text {
     font-size: 35px;
-}
+  }
+  /* Important Info Section */
+  .imp-info-section-container {
+    flex-direction: column;
+  }
+  .imp-info-text-container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 70px;
+  }
+  .imp-info-container {
+    flex-direction: column;
+  }
+
+  .imp-info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sign-img,
+  .sign-bg-container {
+    margin-bottom: 12px;
+  }
+
+  .text-social-media {
+    text-align: center;
+  }
+
+  .info-direct {
+    text-align: center;
+  }
+
+  /* Contact us Section */
+  .embrace-text {
+    font-size: 30px;
+  }
+
+  .at-premier-text {
+    font-size: 12px;
+    max-width: 400px;
+  }
+
+  .white-button {
+    font-size: 13px;
+    padding: 12px 24px;
+  }
+  /* Footer Section */
+  .end-title {
+    font-size: 20px;
+  }
+  .end-description {
+    font-size: 11px;
+  }
+
+  .end-information,
+  .end-rights {
+    font-size: 12px;
+  }
 }
