@@ -202,7 +202,7 @@ body {
   font-weight: 500;
   font-size: 15px;
   color: #252525;
-  max-width: 370px;
+  max-width: 380px;
   line-height: 22.43px;
 }
 
@@ -513,7 +513,7 @@ body {
   }
 
   .imp-info-text-container {
-    padding-right: none;
+            padding: 0;
   }
   .social-1-line {
     flex-direction: column;

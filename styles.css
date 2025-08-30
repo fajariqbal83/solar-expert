@@ -704,8 +704,8 @@ body {
 }
 
 .review-line {
-    width: 100%;
-  }
+  width: 100%;
+}
 
 .review-1 {
   font-family: Inter;
@@ -1279,7 +1279,7 @@ body {
   }
 
   .all-reviews-container {
-    gap: 10px;
+    gap: 30px;
   }
 
   .review-line {
