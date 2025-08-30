@@ -122,14 +122,14 @@ body {
 }
 
 .quote-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 40px 60px;
-    max-width: 1500px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 60px;
+  max-width: 1500px;
+  width: 100%;
 }
 
 .line-sign {
@@ -470,14 +470,14 @@ body {
 }
 
 .about-us-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 40px 60px;
-    max-width: 1500px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 60px;
+  max-width: 1500px;
+  width: 100%;
 }
 
 .about-us-img-container {
@@ -559,16 +559,16 @@ body {
   background: #0b253b url("signs/Mask group.png") center / cover no-repeat;
 }
 
-.contact-text-container, 
+.contact-text-container,
 .our-mission-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 60px 60px;
-    max-width: 1500px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 60px 60px;
+  max-width: 1500px;
+  width: 100%;
 }
 
 .solar-energy-text {
@@ -627,10 +627,10 @@ body {
 }
 
 .testimonals-info-container {
-    margin: 0 auto;
-    padding: 60px 60px;
-    max-width: 1500px;
-    width: 100%;
+  margin: 0 auto;
+  padding: 60px 60px;
+  max-width: 1500px;
+  width: 100%;
 }
 
 .success-stories-description,
@@ -769,13 +769,13 @@ body {
 /* Blog Section */
 
 .blog-all-info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px;
-    margin: 0 auto;
-    max-width: 1500px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
 }
 
 .blog-container {
@@ -893,14 +893,14 @@ body {
 /* Start Section */
 
 .start-section-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px;
-    max-width: 1500px;
-    margin: 0 auto;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .start-section-background {
@@ -1026,13 +1026,13 @@ body {
 }
 /* Footer Section */
 .footer-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px;
-    max-width: 1500px;
-    width: 100%;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .end-title {
@@ -1091,12 +1091,16 @@ body {
   margin-top: 25px;
 }
 
+.end-line {
+    width: 100%;
+}
 .footer-background {
   background-color: #0b253b;
 }
 
 /* Responsive Design */
 /* Mobile Screen */
+
 @media only screen and (max-width: 767px) {
   /* Header */
   .right-section-header .nav,
@@ -1117,24 +1121,87 @@ body {
     height: 70px;
   }
   /* Quote Section */
+
+  .quote-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-title h1 {
+    text-align: center;
+  }
+
+  .services-title h2 {
+    text-align: center;
+    max-width: none;
+  }
+
   .quote-container,
   .about-us-container,
   .contact-text-container,
   .our-mission-container {
     flex-direction: column;
+    padding: 30px 10px;
   }
 
   .efficiency-background {
-    top: 6%;
-    right: 0%;
+    top: 0%;
+    left: -5%;
     transform: scale(0.95);
     transform-origin: top right;
   }
+
   .chart-container {
-    bottom: 6%;
-    left: 0%;
+    top: 20.8%;
+    left: -1%;
     transform: scale(0.95);
     transform-origin: bottom left;
+  }
+
+  .services-title h1,
+  .title-aboutus,
+  .mission-title,
+  .success-stories,
+  .latest-blog,
+  .start-text {
+    font-size: 30px;
+  }
+
+  .line-sign,
+  .sign-aboutus,
+  .sign-mission,
+  .sign-testimonals,
+  .sign-blog,
+  .start-sign {
+    width: 70px;
+  }
+
+  .quotes-text h2,
+  .services-title h2,
+  .heading-aboutus,
+  .paragraph-aboutus,
+  .getstarted-text,
+  .mission-text,
+  .mission-paragraph,
+  .title-testimonals,
+  .success-stories-description,
+  .title-blog,
+  .blog-description,
+  .start-title,
+  .start-description {
+    font-size: 12px;
+  }
+
+  .contact-button,
+  .learn-button,
+  .touch-button,
+  .white-button,
+  .mission-touch-button,
+  .view-blog,
+  .start-quote-button {
+    font-size: 13px;
+    padding: 12px 24px;
   }
 
   .quote-text-container {
@@ -1143,11 +1210,33 @@ body {
 
   .quote-text-container,
   .mission-text-container {
-    padding: 30px;
+    padding: 10px 10px 30px;
   }
 
+  .grid {
+    flex-direction: column;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+  }
   .quote-background-container {
     margin-top: 30px;
+  }
+
+  /* About us Section */
+  .year-experience {
+    left: 0%;
+    top: 0%;
+  }
+
+  .about-us-text-container {
+    padding: 10px 10px;
   }
 
   /* Contact us Section */
@@ -1155,11 +1244,54 @@ body {
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .contact-text-container {
+    padding: 20px 10px;
+  }
+  .embrace-text {
+    font-size: 25px;
+  }
+
+  /* Testimonals Section */
+  .testimonals-info-container {
+    padding: 30px 10px;
+  }
+
+  .first-two-review,
+  .last-two-review,
+  .blog-container {
+    padding: 0px;
+  }
+
+  .first-two-review,
+  .last-two-review {
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .review-info-container {
+    padding: 10px 10px;
+  }
+
+  .all-reviews-container {
+    gap: 10px;
+  }
+
+  .review-line {
+    width: 100%;
+  }
   /* Blog Section */
   .blog-container {
     flex-direction: column;
     align-items: center;
   }
+
+  .blog-all-info-container,
+  .start-section-container {
+    padding: 30px 10px;
+  }
+
   /*Start Section */
   .start-section-container {
     flex-direction: column;
@@ -1182,7 +1314,16 @@ body {
   .start-description {
     text-align: center;
   }
+
+  .quote-all-info-container {
+    padding: 20px;
+  }
+
   /* Footer Section */
+  .footer-text-container {
+    padding: 30px 20px;
+  }
+
   .end-title {
     font-size: 20px;
   }
@@ -1193,6 +1334,11 @@ body {
   .end-information,
   .end-rights {
     font-size: 12px;
+    text-align: center;
+  }
+
+  .end-line {
+    width: 100%;
   }
 }
 
@@ -1287,7 +1433,12 @@ body {
   .start-description {
     text-align: center;
   }
+
   /* Footer Section */
+  .footer-text-container {
+    padding: 30px 20px;
+  }
+
   .end-title {
     font-size: 20px;
   }
@@ -1298,5 +1449,10 @@ body {
   .end-information,
   .end-rights {
     font-size: 12px;
+    text-align: center;
+  }
+
+  .end-line {
+    width: 100%;
   }
 }
