@@ -703,6 +703,10 @@ body {
   padding: 20px 28px;
 }
 
+.review-line {
+    width: 100%;
+  }
+
 .review-1 {
   font-family: Inter;
   font-weight: 400;
@@ -1092,7 +1096,7 @@ body {
 }
 
 .end-line {
-    width: 100%;
+  width: 100%;
 }
 .footer-background {
   background-color: #0b253b;
